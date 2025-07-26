@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.keyboard {
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+button {
+  margin: 2px;
+  padding: 10px;
+  width: 40px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button.active {
+  background-color: orange !important;
+  transform: scale(1.1);
+}
+
+body.dark button {
+  background-color: #444;
+  color: #fff;
+  border-color: #666;
+}
+
+.text-output {
+  font-size: 1.2em;
+  border: 1px dashed #999;
+  padding: 10px;
+  min-height: 60px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Highlight styling */
+.text-output span {
+  white-space: pre;
+}
+
+.text-output .highlight {
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  resize: none;
+  font-family: inherit;
+}
+
+.controls {
+  margin: 15px 0;
+}
+
+.controls button {
+  width: 80px;
+  margin: 0 10px;
+}
+
+.difficulty {
+  margin: 10px 0 20px 0;
+  user-select: none;
+}
+
+/* Style for special characters row */
+.special-row button {
+  background-color: #bbb;
+}
+
+body.dark .special-row button {
+  background-color: #555;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Test with CPS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div class="container">
+    <h1>Typing Test</h1>
+
+    <label>
+      <input type="checkbox" id="themeSwitcher" />
+      Dark Theme
+    </label>
+
+    <div class="difficulty">
+      <label><input type="radio" name="level" value="easy" checked /> Easy</label>
+      <label><input type="radio" name="level" value="medium" /> Medium</label>
+      <label><input type="radio" name="level" value="difficult" /> Difficult</label>
+    </div>
+
+    <div class="keyboard" id="keyboard">
+      <div class="row">
+        <button>`</button><button>1</button><button>2</button><button>3</button><button>4</button>
+        <button>5</button><button>6</button><button>7</button><button>8</button><button>9</button>
+        <button>0</button><button>-</button><button>=</button>
+      </div>
+      <div class="row">
+        <button>Q</button><button>W</button><button>E</button><button>R</button><button>T</button>
+        <button>Y</button><button>U</button><button>I</button><button>O</button><button>P</button>
+        <button>[</button><button>]</button><button>\</button>
+      </div>
+      <div class="row">
+        <button>A</button><button>S</button><button>D</button><button>F</button><button>G</button>
+        <button>H</button><button>J</button><button>K</button><button>L</button><button>;</button><button>'</button>
+      </div>
+      <div class="row">
+        <button>Z</button><button>X</button><button>C</button><button>V</button><button>B</button>
+        <button>N</button><button>M</button><button>,</button><button>.</button><button>/</button>
+      </div>
+      <div class="row special-row">
+        <button>!</button><button>@</button><button>#</button><button>$</button><button>%</button>
+        <button>^</button><button>&</button><button>*</button><button>(</button><button>)</button>
+        <button>?</button><button>></button><button><</button>
+      </div>
+    </div>
+
+    <p id="generatedText" class="text-output"></p>
+
+    <div class="controls">
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+
+    <p>Time: <span id="timer">0.00</span> sec</p>
+    <p>Accuracy: <span id="accuracy">0%</span></p>
+    <p>Characters per second: <span id="cps">0</span></p>
+
+    <textarea id="userInput" rows="4" placeholder="Start typing here..."></textarea>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
